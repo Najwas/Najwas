@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Najwa</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Najwa</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="movie_poster_descriptor">Movie Poster</string>
+
+    <string name="the_movie_db_parameter_api_key">api_key</string>
+    <string name="the_movie_db_parameter_language">language</string>
+    <string name="the_movie_db_parameter_page">page</string>
+
+    <string name="the_movie_db_value_api_key">8300ce5f76b1fd44f70373f7211df3bb</string>
+    <string name="the_movie_db_value_language">en-US</string>
+    <string name="the_movie_db_value_page">2</string>
+    <string name="add_to_favorite_label">Add To Favorite</string>
+    <string name="search_label">Search</string>
+    <string name="year_hint">Year</string>
+    <string name="name_hint">Name</string>
+    <string name="similar_movies_label">Similar Movies</string>
+</resources>

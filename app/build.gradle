@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.najwa.www.najwa"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // Variables
+    def room_database_version = "1.1.1"
+    def lifecycle_version = "1.1.1"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // Support Design Library
+    implementation 'com.android.support:design:28.0.0'
+
+    // Android Architectural Component Lifecycle
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+
+    // Image Loading and Cache
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    // Card View
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    // Scalable Display Unit
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    // Scalable Text Unit
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    // Room Database
+    implementation "android.arch.persistence.room:runtime:$room_database_version"
+    annotationProcessor "android.arch.persistence.room:compiler:$room_database_version"
+
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+
+    // Retrofit For Http Calls
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+
+    // Json Converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+}
